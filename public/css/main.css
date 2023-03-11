@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+
+.phone-screen{
+    width: 520px;
+    height: 850px;
+    position: relative;
+    border: 2px solid black;
+    margin: 100px auto;
+    
+}
+
+.bottom-navbar{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    justify-content: space-around;
+    border: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+    
+ 
+}
+
+ul{
+    
+    list-style: none;
+    display: flex;
+    max-width: 97%;
+    justify-content: space-around;
+}
+
+.topnavbar{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-bottom: 2px solid black;
+    
+    
+
+}
+
+.dm-logo{
+   padding-top: 12px;
+   padding-right: 15px;
+}
+
+
+
+
+
+
+
+
