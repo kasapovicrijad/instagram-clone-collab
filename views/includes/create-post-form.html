@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/public/js/create-post-form.js"></script>
+</head>
+<body>
+
+    <form action="post" class="form">
+        <div class="create-sharebtn">
+            <h1>Create</h1>
+            <button class="sharebtn" id="sharebtn">Share</button>
+        </div>
+
+        <div class="inputs">
+
+        <label for="text">Title</label>
+        <input type="text" name="title">
+        
+        <label for="url">Picture Url</label>
+        <input type="url" name="pic-url">
+        
+        <label for="text">Write a Caption</label>
+        <input type="text" name="caption">
+
+        </div>
+
+        <div class="popup-modal" id="popup-modal">  
+
+        <p class="msg">Are you sure you want to share this post?</p> 
+
+            <div class="yes-no-btn">
+                <button type="submit" class="yes-btn" id="yes-btn">Yes</button>
+                <button class="no-btn" id="no-btn">No</button>
+            </div>
+
+        </div>
+
+    </form>
+  
+    
+</body>
+</html>
