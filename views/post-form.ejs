@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/public/js/create-post-form.js"></script>
+</head>
+<body>
+
+    <form action="/post" method="post">
+        <div class="create-sharebtn">
+            <h1>Create</h1>
+            <button class="sharebtn" id="sharebtn">Share</button>
+        </div>
+
+        <div class="inputs">
+
+        <label for="text">Title</label>
+        <input type="text" placeholder="title" name="title">
+        
+        <label for="url">Picture Url</label>
+        <input type="url" placeholder="picUrl" name="picUrl">
+        
+        <label for="text">Write a Caption</label>
+        <input type="text" placeholder="caption" name="caption">
+
+        </div>
+
+    </form>
+  
+<%- include("includes/bottom-navbar.ejs") %>
+
+
+</body>
+</html>
