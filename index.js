@@ -8,8 +8,14 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
+const objave = path.join(__dirname, 'data', 'posts.json');
+
 app.get('/', (req, res) => {
-    res.render('index');
+    fs.readFile(objave, (err, posts) => { 
+        res.render('home', {
+            posts: JSON.parse(posts)
+        });
+    });
 });
 
 app.get('/post', (req, res) => {
